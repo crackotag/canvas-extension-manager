@@ -1,0 +1,24 @@
+{
+  "title": "Extension Requests (TEST)",
+  "description": "Request and manage assignment extensions",
+  "oidc_initiation_url": "https://YOUR-TUNNEL.example/lti/login",
+  "target_link_uri": "https://YOUR-TUNNEL.example/lti/launch",
+  "redirect_uris": ["https://YOUR-TUNNEL.example/lti/launch"],
+  "public_jwk_url": "https://YOUR-TUNNEL.example/lti/keys",
+  "scopes": [],
+  "extensions": [{
+    "domain": "YOUR-TUNNEL.example",
+    "tool_id": "extension-manager-test",
+    "platform": "canvas.instructure.com",
+    "privacy_level": "public",
+    "settings": {
+      "text": "Extensions",
+      "placements": [{
+        "placement": "global_navigation",
+        "message_type": "LtiResourceLinkRequest",
+        "text": "Extensions",
+        "enabled": true
+      }]
+    }
+  }]
+}
